@@ -1,19 +1,20 @@
 <template>
   <div class="home">
 <Abc></Abc>
-<!-- <JSMPJ></JSMPJ> -->
+<JSMDJ></JSMDJ>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import Abc from './abc.vue';
-// import JSMPJ from './JSMPJ.vue'
+import JSMDJ from './JSMDJ.vue'
 
 export default {
   name: 'home',
   components: {
-  Abc
+  Abc,
+  JSMDJ
   // JSMPJ
   }
 }
