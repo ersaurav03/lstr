@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import JSMDJ from './views/JSMDJ.vue'
+import Display from './views/display.vue'
 
 Vue.use(Router)
 
@@ -26,6 +27,11 @@ export default new Router({
       path:'/JSMDJ',
       name:'JSMDJ',
       component:JSMDJ
+    },
+    {
+      path:'/Display',
+      name:'Display',
+      component:Display
     }
   ]
 })
