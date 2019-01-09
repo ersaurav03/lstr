@@ -12,7 +12,7 @@
 </template>
 
 <script>
-	const STORAGE_KEY = "guest-storage"
+
 	
 	export default{
 		data:function(){
@@ -22,18 +22,15 @@
          }
 		},
 	     created(){
-          this.myGuest=JSON.parse(localStorage.getItem(STORAGE_KEY || '[]'))
+          this.myGuest=JSON.parse(localStorage.getItem('keyy')) || [];
+
 
           },
 		methods:{
 			saveGuest(){
-				this.myGuest.push({
-                guestName: this.guestName
-                }) 
+				this.myGuest.push(this.guestName); 
 
-                this.guestName=""
-
-                localStorage.setItem(STORAGE_KEY, JSON.stringify(this.myGuest));
+                localStorage.setItem('keyy', JSON.stringify(this.myGuest));
 			}
 		}
 	}

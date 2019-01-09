@@ -1,22 +1,19 @@
 <template>
-	<div>
-		<table>
+	<div class="container">
+		<table class="table table-striped text-danger bg-dark">
 			<thead>
-<!-- 				<tr>
-					<th>ID</th><th>Password</th>
-				</tr> -->
 			</thead>
-			<tbody>
-			<tr>
-				<td>
-				<th scope="row">Email</th>
-				<tr v-for="earr1 in earr">{{earr1}}</tr>
-			</td>
+			<tbody >
+			<tr >
+				<td >
+				<th scope="row" >Email</th>
+				<tr  v-for="earr1 in earr">{{earr1}}</tr>
+			    </td>
 			
 			
 				<td>
 				<th scope="row">Passworrd</th> 
-				<tr v-for=" parr1 in parr">{{parr1}}</tr>
+				<tr  v-for=" parr1 in parr">{{parr1}}</tr>
 				</td>
 			</tr>
 			</tbody>
@@ -45,5 +42,10 @@ export default{
 </script>
 
 <style>
+.s1
+{
+	border:2px solid blue;
+	border-top-style: dashed;
+}
 </style>
 

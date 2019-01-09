@@ -12,7 +12,6 @@
 <!-- <h6 v-for="earr1 in earr">{{earr1}}</h6> -->
 </div>
 </template>
-
 <script>
 export default{
 	data:function(){
