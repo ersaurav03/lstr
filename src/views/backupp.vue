@@ -24,12 +24,20 @@
          }
 		},
 	     created(){
-          this.earr=JSON.parse(localStorage.getItem('e_arr'));
-          this.parr=JSON.parse(localStorage.getItem('p_arr'));
+     // localStorage.getItem('Name');
+     //    localStorage.getItem('password');
+          this.earr=JSON.parse(localStorage.getItem('e_arr')) || [];
+          this.parr=JSON.parse(localStorage.getItem('p_arr')) || [];
           },
 		methods:{
 			saveGuest(){
-				this.earr.push(this.email) ;
+				debugger
+				// this.earr.push(this.email) ;
+    //             this.parr.push(this.password);
+                
+    //             localStorage.setItem('Name',this.email);
+    //             localStorage.setItem('password',this.password);
+    			this.earr.push(this.email) ;
                 this.parr.push(this.password);
                 
                 localStorage.setItem('p_arr', JSON.stringify(this.parr));
